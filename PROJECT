@@ -1,0 +1,16 @@
+domain: my.crd
+layout:
+- go.kubebuilder.io/v3
+projectName: crd-kubebuilder
+repo: my.crd/crd-kubebuilder
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: my.crd
+  group: apiserver
+  kind: RokibulHasan
+  path: my.crd/crd-kubebuilder/api/v1
+  version: v1
+version: "3"

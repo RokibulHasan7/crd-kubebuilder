@@ -1,0 +1,26 @@
+apiVersion: apiserver.my.crd/v1
+kind: RokibulHasan
+metadata:
+  name: rokibulhasan-sample
+spec:
+  startTime: 7 #AM UTC
+  endTime: 8 #AM UTC
+  replicas: 5
+  deployments:
+    - name: nginx
+      namespace: default
+---
+
+apiVersion: apiserver.my.crd/v1
+kind: RokibulHasan
+metadata:
+  name: rokibulhasan-example
+spec:
+  startTime: 8 #AM UTC
+  endTime: 9 #AM UTC
+  replicas: 3
+  deployments:
+    - name: nginx
+      namespace: default
+
+
